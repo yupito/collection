@@ -18,7 +18,7 @@ void detab (char input[], char output[]) {
         if (input[inputNum] == '\t') {
             int blankNum = TABSTOP - (inputNum % TABSTOP);
             for (;blankNum > 0;blankNum--) {
-                output[outputNum++] = 'b';
+                output[outputNum++] = ' ';
             }
         } else {
             output[outputNum++] = input[inputNum];
